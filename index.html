@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Google</title>
+        <style>
+            #home{
+                text-align: center;
+                width : auto;
+            }
+            #field{
+                border-radius: 25px;
+                border : 1px solid rgb(243, 237, 237);
+                min-width : 500px;
+                padding : 15px;
+            }
+            #btn{
+                border-radius: 5px;
+                border : 1px solid grey;
+                padding : 10px;
+            }
+            #btn:hover{
+                background-color : rgba(160, 149, 149, 0.479);
+                font-weight: bold;
+            }
+            .container {
+                margin-left: 400px;
+                position: absolute;
+                top: 50%;
+            }
+            #field:hover{
+                background-color : rgba(236, 223, 223, 0.479);
+            }
+            .pages{
+                padding : 20px;
+            }
+            #imgsrch,#as{
+                border-radius: 5px;
+                border : 1px solid grey;
+                width: 170px;
+                padding: 10px;
+                float:right;
+            }
+            #as:hover{
+                background-color : rgba(236, 223, 223, 0.479);
+            }
+            #imgsrch:hover{
+                background-color : rgba(236, 223, 223, 0.479);
+            }
+            #btn1{
+                border-radius: 5px;
+                border : 1px solid grey;
+                padding : 10px;
+            }
+            #btn1:hover{
+                background-color : rgba(160, 149, 149, 0.479);
+                font-weight: bold;
+            }
+            #heading{
+                text-align: center;
+                font-size: 90px;
+            }
+            #googleLogo{
+                max-width: 325px;
+                display: block;
+                margin-left: 500px;
+                margin-right: auto;
+            }
+        </style>
+        
+    </head>
+    <body>
+        
+        <div class="pages">
+            <div id="imgsrch"><a href="Google image search.html">Google Images</a></div><br><br><br>
+            <div id="as"><a href="Google Advanced Search.html">Google Advanced Search</a></div>
+        </div>
+        <img id="googleLogo" src="google2.0.0.jpg" alt="google logo"><br>
+        <!-- <h1>This Page is for Google Search</h1> -->
+        <div class="container">
+            <form id="home" action="https://www.google.com/search" method=GET>
+                <input id="field" type="text" name="q" Placeholder="Type anything to search"><br><br>
+                <input id="btn" type="submit" value="Google Search">
+                <input id="btn1" type="submit" name="btnI" value="I'm Feeling Lucky">
+            </form>
+        </div>
+    </body>
+</html>
